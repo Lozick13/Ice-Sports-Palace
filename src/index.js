@@ -1,2 +1,4 @@
 import './scss/main.scss'
-import './js/sidebar'
+import sidebar from './js/sidebar'
+
+sidebar()
