@@ -1,0 +1,30 @@
+.logo {
+	height: 21px;
+}
+.clear-btn {
+	background: none;
+	padding: 0;
+	border: none;
+}
+.header-btn {
+	border: 2px solid $white;
+	border-radius: 10px;
+	background: rgba(255, 255, 255, 0.07);
+	padding: 10px;
+	width: 153.5px;
+	color: $white;
+	&:hover {
+		background: $white;
+		color: $deep-blue;
+	}
+}
+
+@media (min-width: 1440px) {
+	.header-btn {
+		width: 236px;
+		padding: 19.5px;
+	}
+	.logo {
+		height: 76px;
+	}
+}

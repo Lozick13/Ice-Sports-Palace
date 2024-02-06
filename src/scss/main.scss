@@ -1,10 +1,24 @@
-$font-size: 1rem;
-$font-color: lch(28 99 35);
+// Abstract files
+@import 'abstracts/all.scss';
 
-html {
-	font-size: $font-size;
-	color: $font-color;
-}
+// Vendor Files
+@import 'vendors/bootstrap.scss';
+
+// Core files
+@import 'core/all';
+
+// Components
+@import 'components/all';
+
+// Layout
+@import 'layout/all';
+
+// Sections
+@import 'sections/all';
+
+// Pages
+@import 'pages/all';
+
 body {
-	background: #a96d6d;
+	min-width: 360px;
 }

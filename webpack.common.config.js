@@ -13,9 +13,10 @@ module.exports = {
 	devtool: 'source-map', // позволяет создавать карты исходников js и css
 	module: {
 		rules: [
+		
 			{
 				test: /\.js$/,
-				include: path.resolve(__dirname, 'src/js'),
+				include: path.resolve(__dirname, 'src', 'js'),
 				use: {
 					loader: 'babel-loader',
 					options: {
@@ -24,7 +25,6 @@ module.exports = {
 				},
 				exclude: /node_modules/,
 			},
-
 			{
 				test: /\.(scss|css)$/,
 				use: [

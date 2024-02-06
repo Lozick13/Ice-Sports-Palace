@@ -1,0 +1,12 @@
+.sidebar {
+	display: none;
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	background: $deep-blue;
+	button {
+		position: absolute;
+		top: 30px;
+		right: 30px;
+	}
+}
