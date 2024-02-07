@@ -1,4 +1,5 @@
-import './scss/main.scss'
-import sidebar from './js/sidebar'
+import './scss/main.scss';
+import * as sidebar from './js/sidebar';
 
-sidebar()
+sidebar.sidebarOpen();
+sidebar.sidebarClose();
