@@ -1,52 +1,202 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>ЛДС</title>
-	</head>
-	<body>
-		<article class="sidebar">
-			<button class="clear-btn" id="sidebar-close">
-				<img src="img/Крестик.svg" alt="Закрыть" />
-			</button>
-			<nav class="navigation navigation_mobile">
-				<a href="" class="exo2-bold white">Услуги</a
-				><a href="" class="exo2-bold white">Прайс</a
-				><a href="" class="exo2-bold white">Фото</a
-				><a href="" class="exo2-bold white">Камеры</a>
-			</nav>
-		</article>
-		<header class="header">
-			<div class="header__top">
-				<button class="clear-btn" id="sidebar-open">
-					<img src="img/Union.svg" alt="Открыть" />
-				</button>
-				<a href="#"
-					><img src="img/LDS 2.png" alt="Логотип ЛДС" class="logo"
-				/></a>
-				<nav class="navigation">
-					<a href="" class="exo2-regular white">Услуги</a
-					><a href="" class="exo2-regular white">Прайс</a
-					><a href="" class="exo2-regular white">Фото</a
-					><a href="" class="exo2-regular white">Камеры</a
-					><a href="" class="exo2-regular white">Контакты</a>
-				</nav>
-				<a href="tel:+79999999999" class="exo2-regular white tel"
-					>8 (999-99) 9-99-99</a
-				>
-			</div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ЛДС</title>
+  </head>
+  <body>
+    <article class="sidebar">
+      <button class="clear-btn" id="sidebar-close">
+        <img src="img/Крестик.svg" alt="Закрыть" />
+      </button>
+      <nav class="navigation navigation_mobile">
+        <a href="" class="exo2-bold white-hover">Услуги</a
+        ><a href="" class="exo2-bold white-hover">Прайс</a
+        ><a href="" class="exo2-bold white-hover">Фото</a
+        ><a href="" class="exo2-bold white-hover">Камеры</a>
+      </nav>
+    </article>
 
-			<div class="header__main">
-				<span class="exo2-black white">Ледовый дворец спорта Бердск</span>
-				<div class="header__btns">
-					<button class="header-btn exo2-regular">Прайс</button>
-					<button class="header-btn exo2-regular">Бронь</button>
-				</div>
-			</div>
-		</header>
+    <header class="header">
+      <div class="header__top">
+        <button class="clear-btn" id="sidebar-open">
+          <img src="img/Union.svg" alt="Открыть" />
+        </button>
+        <a href="#"><img src="img/LDS 2.png" alt="Логотип ЛДС" class="logo" /></a>
+        <nav class="navigation">
+          <a href="" class="exo2-regular white-hover">Услуги</a
+          ><a href="" class="exo2-regular white-hover">Прайс</a
+          ><a href="" class="exo2-regular white-hover">Фото</a
+          ><a href="" class="exo2-regular white-hover">Камеры</a
+          ><a href="" class="exo2-regular white-hover">Контакты</a>
+        </nav>
+        <a href="tel:+79999999999" class="exo2-regular white-hover tel"
+          >8 (999-99) 9-99-99</a
+        >
+      </div>
 
-		<main></main>
-		<footer></footer>
-	</body>
+      <div class="header__main">
+        <h1 class="exo2-black white">Ледовый дворец спорта Бердск</h1>
+        <div class="header__btns">
+          <button class="header-btn header-btn_transparent exo2-regular">Прайс</button>
+          <button class="header-btn exo2-regular">Бронь</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="services">
+        <h2 class="exo2-bold deep-blue">Услуги</h2>
+        <div class="services__wrap">
+          <article class="services__card exo2-regular deep-blue">
+            <img src="img/ice skating.svg" alt="Коньки" />
+            <span>Аренда и заточка коньков</span>
+          </article>
+          <article class="services__card exo2-regular deep-blue">
+            <img src="img/Union1.svg" alt="Бильярд" />
+            <span>Бильярд</span>
+          </article>
+          <article class="services__card exo2-regular deep-blue">
+            <img src="img/Union2.svg" alt="Теннис" />
+            <span>Настольный теннис</span>
+          </article>
+          <article class="services__card exo2-regular deep-blue">
+            <img src="img/Outline.svg" alt="Клюшки" />
+            <span>Тренировки и соревнования</span>
+          </article>
+        </div>
+        <img src="img/Разделитель.svg" alt="Разделитель" class="delimiter" />
+      </section>
+
+      <section class="price">
+        <h2 class="exo2-bold deep-blue">Прайс</h2>
+
+        <table class="table">
+          <tr>
+            <th class="table__cell table__cell_lt exo2-regular white">
+              Массовое катание
+            </th>
+            <th class="table__cell exo2-regular white">Аренда коньков</th>
+            <th class="table__cell table__cell_rt exo2-regular white">Свои коньки</th>
+          </tr>
+          <tr>
+            <td class="table__cell exo2-regular">Дети до 7 лет</td>
+            <td class="table__cell exo2-regular">100 р/ч</td>
+            <td class="table__cell exo2-regular">100 р/ч</td>
+          </tr>
+          <tr>
+            <td class="table__cell exo2-regular">Остальные</td>
+            <td class="table__cell exo2-regular">200 р/ч</td>
+            <td class="table__cell exo2-regular">180 р/ч</td>
+          </tr>
+          <tr>
+            <td class="table__cell exo2-regular" colspan="2">
+              Посещение зоны зрительного зала
+            </td>
+            <td class="table__cell exo2-regular">50 р/ч</td>
+          </tr>
+          <tr>
+            <td class="table__cell exo2-regular" colspan="2">Заточка коньков взрослых</td>
+            <td class="table__cell exo2-regular">200 р/пара</td>
+          </tr>
+          <tr class="last-row">
+            <td class="table__cell table__cell_lb exo2-regular" colspan="2">
+              Бросковый тренажер (хоккей с шайбой)
+            </td>
+            <td class="table__cell table__cell_rb exo2-regular">750 р/ч</td>
+          </tr>
+        </table>
+        <table class="table">
+          <tr>
+            <th class="table__cell table__cell_lt exo2-regular" colspan="2">
+              Инвентарь для настольного тенниса
+            </th>
+            <td class="table__cell table__cell_rt exo2-regular">200 р/ч</td>
+          </tr>
+          <tr>
+            <th class="table__cell exo2-regular" colspan="3">Инвентарь для бильярда</th>
+          </tr>
+          <tr>
+            <td class="table__cell exo2-regular">Со столом “8 футов”</td>
+            <td class="table__cell exo2-regular">Со столом “10 футов”</td>
+            <td class="table__cell exo2-regular">Со столом “12 футов”</td>
+          </tr>
+          <tr class="last-row">
+            <td class="table__cell table__cell_lb exo2-regular">250 р/ч</td>
+            <td class="table__cell exo2-regular">300 р/ч</td>
+            <td class="table__cell table__cell_rb exo2-regular">400 р/ч</td>
+          </tr>
+        </table>
+        <table class="table">
+          <tr>
+            <th
+              class="table__cell table__cell_lt table__cell_rt exo2-regular"
+              colspan="2"
+            >
+              Аренда зала (групповые занятия)
+            </th>
+          </tr>
+          <tr>
+            <td class="table__cell exo2-regular">Для разминки<br />(холл 2 этажа)</td>
+            <td class="table__cell exo2-regular">Для хореографии</td>
+          </tr>
+          <tr>
+            <td class="table__cell exo2-regular">500 р/ч</td>
+            <td class="table__cell exo2-regular">1000 р/ч</td>
+          </tr>
+          <tr>
+            <th class="table__cell exo2-regular" colspan="2">
+              Дополнительные раздевалки
+            </th>
+          </tr>
+          <tr>
+            <td class="table__cell exo2-regular">Для игроков</td>
+            <td class="table__cell exo2-regular">Для судей</td>
+          </tr>
+          <tr class="last-row">
+            <td class="table__cell table__cell_lb exo2-regular">1000 р/ч</td>
+            <td class="table__cell table__cell_rb exo2-regular">500 р/ч</td>
+          </tr>
+        </table>
+
+        <button class="main-btn exo2-regular" id="rates">Тарифы</button>
+
+        <article class="reservation">
+          <button class="reservation-btn exo2-regular white">
+            <img src="img/ice skating.svg" alt="Коньки" />
+            <span>Забронировать коньки</span>
+          </button>
+          <button class="reservation-btn exo2-regular white">
+            <img src="img/Union2.svg" alt="Теннис" />
+            <span>Забронировать стол для тенниса</span>
+          </button>
+          <button class="reservation-btn exo2-regular white">
+            <img src="img/Union1.svg" alt="Бильярд" />
+            <span>Забронировать стол для бильярда</span>
+          </button>
+          <button class="reservation-btn exo2-regular white">
+            <img src="img/Outline.svg" alt="Клюшки" />
+            <span>Бронь для групповых тренировок</span>
+          </button>
+        </article>
+      </section>
+
+      <h2 class="exo2-bold deep-blue h2-big">
+        Приглашаем на массовое катание по выходным<br />с 17 до 22
+      </h2>
+
+      <section class="rules">
+        <div class="rules__header">
+          <span>Правила поведения во время массового катания</span>
+          <button id="switch-rules"><img src="" alt="Вперёд" /></button>
+        </div>
+        <div class="rules__cards">
+          <article class="rules__card"><img src="" alt="" /><span></span></article>
+          <div class="rules__bar">---------------</div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
 </html>

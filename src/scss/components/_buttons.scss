@@ -1,30 +1,80 @@
 .logo {
-	height: 21px;
+  height: 21px;
 }
 .clear-btn {
-	background: none;
-	padding: 0;
-	border: none;
+  background: none;
+  padding: 0;
+  border: none;
 }
 .header-btn {
-	border: 2px solid $white;
-	border-radius: 10px;
-	background: rgba(255, 255, 255, 0.07);
-	padding: 10px;
-	width: 153.5px;
-	color: $white;
-	&:hover {
-		background: $white;
-		color: $deep-blue;
-	}
+  border: 2px solid $white;
+  border-radius: 10px;
+  background: $white;
+  color: $deep-blue;
+
+  padding: 10px;
+  width: 153.5px;
+  &:hover {
+    border-color: $grey-blue;
+    background: $grey-blue;
+    color: $white;
+  }
+}
+.header-btn_transparent {
+  color: $white;
+  background: rgba(255, 255, 255, 0.07);
+  &:hover {
+    background: rgba(255, 255, 255, 0.07);
+    border-color: $grey-blue;
+    color: $grey-blue;
+  }
+}
+.main-btn {
+  padding: 15px 30px;
+  border-radius: 10px;
+  background: $vivid-blue;
+  color: $white;
+  border: none;
+  &:hover {
+    background: $grey-blue;
+  }
+}
+.reservation-btn {
+  border-radius: 15px;
+  border: none;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  width: 328px;
+  gap: 30px;
+  background: $deep-blue;
+  text-transform: uppercase;
+  text-align: start;
+  img {
+    height: 37px;
+    width: 37px;
+    filter: brightness(0) invert(1);
+  }
+  &:hover {
+    background: $vivid-blue;
+  }
 }
 
 @media (min-width: 1440px) {
-	.header-btn {
-		width: 236px;
-		padding: 19.5px;
-	}
-	.logo {
-		height: 76px;
-	}
+  .header-btn {
+    width: 236px;
+    padding: 19.5px;
+  }
+  .logo {
+    height: 76px;
+  }
+  .reservation-btn {
+    padding: 50px 60px;
+    width: 610px;
+    gap: 60px;
+    img {
+      height: 80px;
+      width: 80px;
+    }
+  }
 }

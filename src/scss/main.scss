@@ -20,9 +20,13 @@
 @import 'pages/all';
 
 body {
-	min-width: 360px;
+  min-width: 360px;
+  background: $deep-blue;
 }
-
 .active {
-	display: block;
+  display: block;
+}
+.scroll-bar-off {
+  height: 100vh;
+  overflow: hidden;
 }

@@ -1,59 +1,73 @@
 @font-face {
-	font-family: 'Exo 2', sans-serif;
-	font-style: normal;
-	font-weight: 900;
-	src: local('Exo 2'), url('../fonts/Exo2-Black.ttf');
+  font-family: 'Exo 2', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  src: local('Exo 2'), url('../fonts/Exo2-Black.ttf');
 }
 @font-face {
-	font-family: 'Exo 2', sans-serif;
-	font-style: normal;
-	font-weight: 600;
-	src: local('Exo 2'), url('../fonts/Exo2-SemiBold.ttf');
+  font-family: 'Exo 2', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  src: local('Exo 2'), url('../fonts/Exo2-Black.ttf');
 }
 @font-face {
-	font-family: 'Exo 2', sans-serif;
-	font-style: normal;
-	font-weight: 400;
-	src: local('Exo 2'), url('../fonts/Exo2-Regular.ttf');
+  font-family: 'Exo 2', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  src: local('Exo 2'), url('../fonts/Exo2-SemiBold.ttf');
+}
+@font-face {
+  font-family: 'Exo 2', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  src: local('Exo 2'), url('../fonts/Exo2-Regular.ttf');
 }
 
 .exo2-black {
-	font: {
-		family: 'Exo 2', sans-serif;
-		weight: 900;
-		size: 38px;
-	}
-	@media (min-width: 1440px) {
-		font-size: 108px;
-	}
+  font: {
+    family: 'Exo 2', sans-serif;
+    weight: 900;
+    size: 38px;
+  }
+  @media (min-width: 1440px) {
+    font-size: 108px;
+  }
 }
 .exo2-bold {
-	font: {
-		family: 'Exo 2', sans-serif;
-		weight: 700;
-		size: 36px;
-	}
-	@media (min-width: 1440px) {
-		font-size: 108px;
-	}
-}
-.exo2-semibold {
-	font: {
-		family: 'Exo 2', sans-serif;
-		weight: 600;
-	}
+  font: {
+    family: 'Exo 2', sans-serif;
+    weight: 700;
+    size: 36px;
+  }
+  @media (min-width: 1440px) {
+    font: {
+      family: 'Exo 2', sans-serif;
+      weight: 600;
+      size: 96px;
+    }
+  }
 }
 .exo2-regular {
-	font: {
-		family: 'Exo 2', sans-serif;
-		weight: 400;
-		size: 16px;
-	}
-	@media (min-width: 1440px) {
-		font-size: 18px;
-	}
+  font: {
+    family: 'Exo 2', sans-serif;
+    weight: 400;
+    size: 16px;
+  }
+  @media (min-width: 1440px) {
+    font-size: 18px;
+  }
 }
 
 .white {
-	color: rgb(255, 255, 255);
+  color: $white;
+}
+.deep-blue {
+  color: $deep-blue;
+}
+.white-hover {
+  color: $white;
+
+  &:hover {
+    color: $grey-blue;
+  }
 }

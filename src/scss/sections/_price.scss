@@ -1,0 +1,72 @@
+.price {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  flex-direction: column;
+}
+.table {
+  width: 328px;
+  border-collapse: separate;
+  table-layout: fixed;
+  .table__cell {
+    text-align: center;
+    vertical-align: middle;
+    padding: 16px 12px;
+    line-height: 130%;
+    background: $white;
+    border-left: 2px solid $grey-blue;
+    border-top: 2px solid $grey-blue;
+  }
+  th.table__cell {
+    background: $deep-blue;
+    color: $white;
+    font-weight: 700;
+  }
+
+  .table__cell:last-child {
+    border-right: 2px solid $grey-blue;
+  }
+  .last-row {
+    .table__cell {
+      border-bottom: 2px solid $grey-blue;
+    }
+  }
+
+  .table__cell_lt {
+    border-top-left-radius: 10px;
+  }
+  .table__cell_rt {
+    border-top-right-radius: 10px;
+  }
+  .table__cell_lb {
+    border-bottom-left-radius: 10px;
+  }
+  .table__cell_rb {
+    border-bottom-right-radius: 10px;
+  }
+}
+.reservation {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+@media (min-width: 1440px) {
+  .price {
+    gap: 60px;
+  }
+  .table {
+    width: 1240px;
+    .table__cell {
+      line-height: 22px;
+      padding: 29px;
+    }
+  }
+  .reservation {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+  }
+}
