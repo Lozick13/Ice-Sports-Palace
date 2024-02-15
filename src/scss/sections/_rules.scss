@@ -1,11 +1,185 @@
 .rules {
-  
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+
+  width: 328px;
+  padding: 30px 16px 14px;
+
+  border-radius: 30px;
+  background: $deep-blue;
+
+  gap: 30px;
+  &__header {
+    display: flex;
+
+    justify-content: center;
+  }
+  &__cards {
+    display: flex;
+
+    width: 100vw;
+  }
+  &__card {
+    position: relative;
+
+    display: flex;
+    display: none;
+
+    width: 296px;
+    height: 137px;
+
+    border-radius: 15px;
+    background: linear-gradient(
+      133.38deg,
+      rgb(255, 255, 255) 9.659%,
+      rgb(255, 255, 255, 0.3) 80%
+    );
+    &_active {
+      display: block;
+    }
+    &-container {
+      position: absolute;
+      top: 2px;
+      left: 2px;
+
+      display: flex;
+
+      width: 292px;
+      height: 133px;
+      padding: 16px 16px 16px 20px;
+
+      border-radius: 13px;
+      background: linear-gradient(
+        133.38deg,
+        rgb(58, 77, 107, 0.82) 9.659%,
+        rgb(74, 114, 163, 0.82) 100%
+      );
+
+      align-items: center;
+      gap: 20px;
+      span {
+        line-height: 130%;
+      }
+      img {
+        width: 45px;
+      }
+      &_lock {
+        width: 38px;
+        margin: 0 9px 0 3px;
+      }
+    }
+  }
+  .progress-bar {
+    position: relative;
+    left: 88px;
+
+    display: block;
+
+    width: 120px;
+    height: 2px;
+
+    border-radius: 2px;
+    background: $white;
+    &__point {
+      position: relative;
+
+      width: 10px;
+      height: 2px;
+
+      transition-duration: 0.5s;
+
+      border-radius: 2px;
+      background: $vivid-blue;
+    }
+  }
 }
-.rules__header {
+
+@media (min-width: 1440px) {
+  .rules {
+    width: calc(100% + 200px);
+    padding: 60px 54px 57px;
+
+    gap: 60px;
+    align-items: center;
+    &__header {
+      text-align: center;
+      button {
+        display: none;
+      }
+    }
+    &__cards {
+      display: grid;
+
+      width: 1240px;
+
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      gap: 20px;
+      row-gap: 30px;
+    }
+    &__card {
+      display: block;
+
+      width: 190px;
+      height: 290px;
+      &-container {
+        display: flex;
+        flex-direction: column;
+
+        width: 186px;
+        height: 286px;
+        padding: 20px 15px;
+
+        gap: 25px;
+        span {
+          line-height: 25px;
+
+          text-align: center;
+          br {
+            display: none;
+          }
+        }
+        img {
+          width: auto;
+          height: 80px;
+        }
+        &_lock {
+          width: auto;
+          margin: 0;
+        }
+        img.rules__card_warning {
+          width: 80px;
+          margin-top: 10px;
+        }
+      }
+    }
+    &__bar {
+      display: none;
+    }
+  }
 }
-.rules__cards {
+
+@keyframes fade {
+  0% {
+    visibility: visible;
+
+    opacity: 1;
+  }
+  100% {
+    visibility: hidden;
+
+    opacity: 0;
+  }
 }
-.rules__card {
-}
-.rules__bar {
+@keyframes flip {
+  0% {
+    left: 300px;
+  }
+  60% {
+    left: -10px;
+  }
+  100% {
+    left: 0;
+  }
 }

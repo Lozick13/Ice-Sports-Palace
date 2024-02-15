@@ -1,21 +1,18 @@
-export function sidebarOpen() {
-  const sidebarBtn = document.querySelector('#sidebar-open');
+export function sidebarSwitch() {
   const sidebar = document.querySelector('.sidebar');
   const body = document.querySelector('body');
+  const sidebarBtnOpen = document.querySelector('#sidebar-open');
+  const sidebarBtnClose = document.querySelector('#sidebar-close');
 
-  sidebarBtn.addEventListener('click', () => {
-    sidebar.classList.add('active');
-    body.classList.add('scroll-bar-off');
+  sidebarBtnOpen.addEventListener('click', () => {
+    toggleSidebar();
   });
-}
-
-export function sidebarClose() {
-  const sidebarBtn = document.querySelector('#sidebar-close');
-  const sidebar = document.querySelector('.sidebar');
-  const body = document.querySelector('body');
-
-  sidebarBtn.addEventListener('click', () => {
-    sidebar.classList.remove('active');
-    body.classList.remove('scroll-bar-off');
+  sidebarBtnClose.addEventListener('click', () => {
+    toggleSidebar();
   });
+
+  function toggleSidebar() {
+    sidebar.classList.toggle('active');
+    body.classList.toggle('scroll-bar-off');
+  }
 }

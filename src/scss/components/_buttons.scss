@@ -2,60 +2,75 @@
   height: 21px;
 }
 .clear-btn {
-  background: none;
   padding: 0;
+
   border: none;
+  background: none;
 }
 .header-btn {
+  width: 153.5px;
+  padding: 10px;
+
+  color: $deep-blue;
   border: 2px solid $white;
   border-radius: 10px;
   background: $white;
-  color: $deep-blue;
-
-  padding: 10px;
-  width: 153.5px;
   &:hover {
+    transition-duration: 0.5s;
+
+    color: $white;
     border-color: $grey-blue;
     background: $grey-blue;
-    color: $white;
   }
 }
 .header-btn_transparent {
   color: $white;
   background: rgba(255, 255, 255, 0.07);
   &:hover {
-    background: rgba(255, 255, 255, 0.07);
-    border-color: $grey-blue;
+    transition-duration: 0.5s;
+
     color: $grey-blue;
+    border-color: $grey-blue;
+    background: rgba(255, 255, 255, 0.07);
   }
 }
 .main-btn {
   padding: 15px 30px;
-  border-radius: 10px;
-  background: $vivid-blue;
+
   color: $white;
   border: none;
+  border-radius: 10px;
+  background: $vivid-blue;
   &:hover {
+    transition-duration: 0.5s;
+
     background: $grey-blue;
   }
 }
 .reservation-btn {
-  border-radius: 15px;
-  border: none;
-  padding: 16px;
   display: flex;
-  align-items: center;
+
   width: 328px;
-  gap: 30px;
-  background: $deep-blue;
-  text-transform: uppercase;
+  padding: 16px;
+
   text-align: start;
+  text-transform: uppercase;
+
+  border: none;
+  border-radius: 15px;
+  background: $deep-blue;
+
+  align-items: center;
+  gap: 30px;
   img {
-    height: 37px;
     width: 37px;
+    height: 37px;
+
     filter: brightness(0) invert(1);
   }
   &:hover {
+    transition-duration: 0.5s;
+
     background: $vivid-blue;
   }
 }
@@ -69,12 +84,13 @@
     height: 76px;
   }
   .reservation-btn {
-    padding: 50px 60px;
     width: 610px;
+    padding: 60px 50px;
+
     gap: 60px;
     img {
-      height: 80px;
       width: 80px;
+      height: 80px;
     }
   }
 }

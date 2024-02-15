@@ -1,8 +1,11 @@
 .main {
-  padding: 75px 16px 0;
-  background: #ebf3fa;
   display: flex;
   flex-direction: column;
+
+  padding: 75px 16px 0;
+
+  background: #ebf3fa;
+
   align-items: center;
   gap: 75px;
 }
@@ -11,24 +14,28 @@
   bottom: -32px;
 }
 h2 {
-  text-align: center;
   max-width: 328px;
+
+  text-align: center;
 }
 
 @media (min-width: 1440px) {
   .main {
-    padding: 150px 185px 0;
+    padding: 150px 100px 0;
+
     gap: 150px;
   }
   .delimiter {
-    bottom: -75px;
-    left: -85px;
+    bottom: -85px;
+    left: -84px;
+
+    width: 295px;
   }
   h2 {
     text-align: left;
   }
   .h2-big {
-    max-width: 1240px;
-    width: 1240px;
+    width: 1230px;
+    max-width: 1230px;
   }
 }

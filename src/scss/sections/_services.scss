@@ -1,7 +1,9 @@
 .services {
   position: relative;
+
   display: flex;
   flex-direction: column;
+
   align-items: center;
   h2 {
     margin-bottom: 30px;
@@ -9,18 +11,27 @@
   &__wrap {
     display: flex;
     flex-direction: column;
+
     gap: 15px;
     .services__card {
+      display: flex;
+
       width: 328px;
       padding: 16px;
-      gap: 30px;
+
       border: 2px solid $grey-blue;
       border-radius: 15px;
-      display: flex;
+
+      gap: 30px;
       align-items: center;
       img {
-        height: 37px;
         width: 37px;
+        height: 37px;
+      }
+      span {
+        br {
+          display: none;
+        }
       }
     }
   }
@@ -29,21 +40,34 @@
   .services {
     flex-direction: row;
     h2 {
-      margin-right: 150px;
+      margin-right: 151px;
+      margin-bottom: 0;
     }
     &__wrap {
       display: grid;
+
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(2, 1fr);
+      gap: 18px;
       .services__card {
-        gap: 20px;
-        justify-content: center;
         flex-direction: column;
+
         width: 295px;
         height: 200px;
+
+        gap: 20px;
+        justify-content: center;
         img {
-          height: 80px;
           width: 80px;
+          height: 80px;
+        }
+        span {
+          line-height: 25px;
+
+          text-align: center;
+          br {
+            display: block;
+          }
         }
       }
     }

@@ -1,5 +1,6 @@
 import './scss/main.scss';
-import * as sidebar from './js/sidebar';
+import { sidebarSwitch } from './js/sidebar';
+import { swipingCards } from './js/rules';
 
-sidebar.sidebarOpen();
-sidebar.sidebarClose();
+sidebarSwitch();
+swipingCards();

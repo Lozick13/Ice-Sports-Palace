@@ -1,26 +1,32 @@
 .price {
   display: flex;
+  flex-direction: column;
+
   gap: 30px;
   align-items: center;
-  flex-direction: column;
 }
 .table {
   width: 328px;
-  border-collapse: separate;
+
   table-layout: fixed;
+  border-collapse: separate;
   .table__cell {
+    line-height: 130%;
+
+    padding: 16px 12px;
+
     text-align: center;
     vertical-align: middle;
-    padding: 16px 12px;
-    line-height: 130%;
-    background: $white;
-    border-left: 2px solid $grey-blue;
+
     border-top: 2px solid $grey-blue;
+    border-left: 2px solid $grey-blue;
+    background: $white;
   }
   th.table__cell {
-    background: $deep-blue;
-    color: $white;
     font-weight: 700;
+
+    color: $white;
+    background: $deep-blue;
   }
 
   .table__cell:last-child {
@@ -48,25 +54,31 @@
 .reservation {
   display: flex;
   flex-direction: column;
+
   gap: 15px;
 }
 @media (min-width: 1440px) {
   .price {
-    gap: 60px;
+    gap: 59px;
   }
   .table {
     width: 1240px;
     .table__cell {
       line-height: 22px;
-      padding: 29px;
+
+      padding: 28px;
+      br {
+        display: none;
+      }
     }
   }
   .reservation {
     display: flex;
-    flex-direction: column;
-    gap: 20px;
     display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(2, 1fr);
+    flex-direction: column;
+
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
   }
 }
