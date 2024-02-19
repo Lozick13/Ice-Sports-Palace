@@ -66,15 +66,17 @@
 .white {
   color: $white;
 }
+.grey-blue {
+  color: $grey-blue;
+}
 .deep-blue {
   color: $deep-blue;
 }
 .white-hover {
   color: $white;
+  transition-duration: 0.5s;
 
   &:hover {
-    transition-duration: 0.5s;
-
     color: $grey-blue;
   }
 }

@@ -1,3 +1,6 @@
+button {
+  transition-duration: 0.5s;
+}
 .logo {
   height: 21px;
 }
@@ -6,6 +9,44 @@
 
   border: none;
   background: none;
+}
+.icon {
+  display: inline-block;
+  background: $white;
+  mask-size: cover;
+  transition: 0.5s;
+}
+.icon:hover {
+  background: $grey-blue;
+}
+.icon_rules {
+  mask: url(../img/Polygon1.svg);
+  width: 21px;
+  height: 36px;
+}
+.icon_cross {
+  mask: url(../img/Крестик.svg);
+  width: 20px;
+  height: 20px;
+}
+.icon_sidebar {
+  mask: url(../img/Union.svg);
+  width: 15px;
+  height: 16px;
+}
+.icon_arrow {
+  width: 61px;
+  height: 16px;
+  background: $grey-blue;
+}
+.icon_arrow:hover {
+  background: $deep-blue;
+}
+.icon_back {
+  mask: url(../img/back.svg);
+}
+.icon_forward {
+  mask: url(../img/forward.svg);
 }
 .header-btn {
   width: 153.5px;
@@ -16,8 +57,6 @@
   border-radius: 10px;
   background: $white;
   &:hover {
-    transition-duration: 0.5s;
-
     color: $white;
     border-color: $grey-blue;
     background: $grey-blue;

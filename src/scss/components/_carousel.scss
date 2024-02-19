@@ -1,0 +1,108 @@
+.carousel {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  position: relative;
+  &__counter {
+    position: absolute;
+    align-self: flex-end;
+    top: -102px;
+    .carousel__counter_now {
+      position: relative;
+      font-size: 96px;
+      top: 40px;
+      transition: 0.5s;
+    }
+  }
+  &__container {
+    overflow: hidden;
+    width: 328px;
+    .carousel__items {
+      display: flex;
+      flex-direction: row;
+      gap: 16px;
+      position: relative;
+      right: 0;
+      transition: 1s;
+
+      .carousel__item {
+        cursor: pointer;
+        width: 328px;
+        height: 180px;
+      }
+      .carousel__item:before {
+        content: '';
+        background: $white;
+        width: 328px;
+        height: 100%;
+        position: absolute;
+        opacity: 0.5;
+        transition: 0.5s;
+      }
+      .carousel__item:hover:before {
+        opacity: 0.7;
+      }
+      .carousel__item_active {
+        pointer-events: none;
+      }
+      .carousel__item_active:before {
+        opacity: 0;
+      }
+    }
+  }
+  &__buttons {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .carousel {
+    width: 100%;
+    align-items: flex-start;
+    gap: 0;
+    &__counter {
+      right: 176px;
+      top: -260px;
+      .carousel__counter_now {
+        font-size: 236px;
+        top: 100px;
+      }
+    }
+    &__container {
+      width: auto;
+      overflow: visible;
+      .carousel__items {
+        gap: 15px;
+        .carousel__item {
+          width: 609px;
+          height: 341px;
+        }
+        .carousel__item:before {
+          width: 610px;
+        }
+      }
+    }
+    &__buttons {
+      margin-bottom: 0;
+      gap: 531px;
+      position: absolute;
+      right: 63px;
+      top: -114px;
+    }
+  }
+}
+
+@keyframes countSwitch {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

@@ -36,6 +36,11 @@
     }
   }
 }
+.services:after {
+  content: url(../img/Разделитель.svg);
+  position: absolute;
+  bottom: -32px;
+}
 @media (min-width: 1440px) {
   .services {
     flex-direction: row;
@@ -71,5 +76,11 @@
         }
       }
     }
+  }
+  .services:after {
+    bottom: -85px;
+    left: -84px;
+
+    width: 295px;
   }
 }

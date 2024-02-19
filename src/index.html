@@ -8,11 +8,11 @@
   <body>
     <article class="sidebar">
       <button class="clear-btn" id="sidebar-close">
-        <img src="img/Крестик.svg" alt="Закрыть" />
+        <i class="icon icon_cross"></i>
       </button>
       <nav class="navigation navigation_mobile">
-        <a href="" class="exo2-bold white-hover">Услуги</a
-        ><a href="" class="exo2-bold white-hover">Прайс</a
+        <a href="" class="exo2-bold white-hover">Услуги</a>
+        <a href="" class="exo2-bold white-hover">Прайс</a
         ><a href="" class="exo2-bold white-hover">Фото</a
         ><a href="" class="exo2-bold white-hover">Камеры</a>
       </nav>
@@ -21,7 +21,7 @@
     <header class="header">
       <div class="header__top">
         <button class="clear-btn" id="sidebar-open">
-          <img src="img/Union.svg" alt="Открыть" />
+          <i class="icon icon_sidebar"></i>
         </button>
         <a href="#"><img src="img/LDS 2.png" alt="Логотип ЛДС" class="logo" /></a>
         <nav class="navigation">
@@ -72,7 +72,6 @@
             >
           </article>
         </div>
-        <img src="img/Разделитель.svg" alt="Разделитель" class="delimiter" />
       </section>
 
       <section class="price">
@@ -194,12 +193,12 @@
 
       <section class="rules white">
         <div class="rules__header">
-          <span class="exo2-bold"
-            >Правила поведения&nbsp;<br />
-            во время массового катания</span
-          >
+          <h2 class="exo2-bold h2-big">
+            Правила поведения&nbsp;<br />
+            во время массового катания
+          </h2>
           <button class="clear-btn" id="switch-rules">
-            <img src="img/Polygon 1.svg" alt="Вперёд" />
+            <i class="icon icon_rules"></i>
           </button>
         </div>
         <div class="rules__cards">
@@ -312,6 +311,44 @@
         <div class="progress-bar">
           <div class="progress-bar__point"></div>
         </div>
+      </section>
+
+      <section class="gallery">
+        <div class="gallery__header">
+          <h2 class="exo2-bold deep-blue">Галерея</h2>
+        </div>
+
+        <div class="carousel">
+          <span class="carousel__counter exo2-bold deep-blue"
+            ><span class="carousel__counter_now grey-blue">01</span>/0</span
+          >
+          <div class="carousel__container">
+            <!-- адаптировано под большее количество фото -->
+            <div class="carousel__items">
+              <picture class="carousel__item carousel__item_active">
+                <source media="(min-width: 1440px)" srcset="uploads/IMG_44632.png" />
+                <img src="uploads/mobile/IMG_4463 2.png" alt="Каток" />
+              </picture>
+              <picture class="carousel__item">
+                <source media="(min-width: 1440px)" srcset="uploads/IMG_71081.png" />
+                <img src="uploads/mobile/IMG_7108 2.png" alt="Каток" />
+              </picture>
+              <picture class="carousel__item">
+                <source media="(min-width: 1440px)" srcset="uploads/IMG_44601.png" />
+                <img src="uploads/mobile/IMG_4460 2.png" alt="Каток" />
+              </picture>
+            </div>
+          </div>
+          <div class="carousel__buttons">
+            <button id="carousel-back" class="clear-btn">
+              <i class="icon icon_arrow icon_back"></i>
+            </button>
+            <button id="carousel-forward" class="clear-btn">
+              <i class="icon icon_arrow icon_forward"></i>
+            </button>
+          </div>
+        </div>
+        <button class="main-btn exo2-regular">Фото с массового катания</button>
       </section>
     </main>
     <footer></footer>

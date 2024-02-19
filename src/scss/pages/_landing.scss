@@ -5,14 +5,11 @@
   padding: 75px 16px 0;
 
   background: #ebf3fa;
-
+  overflow: hidden;
   align-items: center;
   gap: 75px;
 }
-.delimiter {
-  position: absolute;
-  bottom: -32px;
-}
+
 h2 {
   max-width: 328px;
 
@@ -24,12 +21,6 @@ h2 {
     padding: 150px 100px 0;
 
     gap: 150px;
-  }
-  .delimiter {
-    bottom: -85px;
-    left: -84px;
-
-    width: 295px;
   }
   h2 {
     text-align: left;

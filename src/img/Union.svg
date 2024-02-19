@@ -1,7 +1,1 @@
-<svg width="15.000000" height="16.000000" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-	<desc>
-			Created with Pixso.
-	</desc>
-	<defs/>
-	<path id="Union" d="M14 0L1 0C0.447754 0 0 0.447754 0 1C0 1.55225 0.447754 2 1 2L14 2C14.5522 2 15 1.55225 15 1C15 0.447754 14.5522 0 14 0ZM1 7L14 7C14.5522 7 15 7.44775 15 8C15 8.55225 14.5522 9 14 9L1 9C0.447754 9 0 8.55225 0 8C0 7.44775 0.447754 7 1 7ZM14 14L1 14C0.447754 14 0 14.4478 0 15C0 15.5522 0.447754 16 1 16L14 16C14.5522 16 15 15.5522 15 15C15 14.4478 14.5522 14 14 14Z" clip-rule="evenodd" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
-</svg>
+<svg width="15" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14 0H1a1 1 0 0 0 0 2h13a1 1 0 0 0 0-2ZM1 7h13a1 1 0 0 1 0 2H1a1 1 0 0 1 0-2Zm13 7H1a1 1 0 0 0 0 2h13a1 1 0 0 0 0-2Z" clip-rule="evenodd" fill="#FFF" fill-rule="evenodd"/></svg>
