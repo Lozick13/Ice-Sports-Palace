@@ -24,6 +24,19 @@ button {
   width: 21px;
   height: 36px;
 }
+.icon_information {
+  mask: url(../img/Polygon1.svg);
+  background: $dark-blue;
+  mask-size: 15px 28px;
+  height: 28px;
+  width: 15px;
+}
+.icon_information:hover {
+  background: $dark-blue;
+}
+.icon_information-active {
+  transform: rotate(90deg);
+}
 .icon_cross {
   mask: url(../img/Крестик.svg);
   width: 20px;
@@ -112,6 +125,20 @@ button {
 
     background: $vivid-blue;
   }
+}
+.information-btn {
+  padding: 16px;
+  border-radius: 10px;
+  background: $grey-blue;
+  border: none;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+.information-btn:hover {
+  filter: brightness(110%);
 }
 
 @media (min-width: 1440px) {

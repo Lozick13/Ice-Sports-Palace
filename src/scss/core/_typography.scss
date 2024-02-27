@@ -26,6 +26,13 @@
 
   src: local('Exo 2'), url('../fonts/Exo2-Regular.ttf');
 }
+@font-face {
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 200;
+  font-style: normal;
+
+  src: local('Exo 2'), url('../fonts/Exo2-ExtraLight.ttf');
+}
 
 .exo2-black {
   font: {
@@ -62,9 +69,22 @@
     font-size: 18px;
   }
 }
+.exo2-extralight {
+  font: {
+    family: 'Exo 2', sans-serif;
+    weight: 200;
+    size: 12px;
+  }
+  @media (min-width: 1440px) {
+    font-size: 18px;
+  }
+}
 
 .white {
   color: $white;
+}
+.dark-blue {
+  color: $dark-blue;
 }
 .grey-blue {
   color: $grey-blue;

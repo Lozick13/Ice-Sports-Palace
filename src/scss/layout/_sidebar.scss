@@ -13,4 +13,23 @@
     top: 30px;
     right: 30px;
   }
+  animation: sidebarOpen 0.25s ease;
+}
+@keyframes sidebarOpen {
+  0% {
+    position: absolute;
+    left: -100vw;
+  }
+  100% {
+    left: 0;
+  }
+}
+@keyframes sidebarClose {
+  0% {
+    left: 0;
+  }
+  100% {
+    position: absolute;
+    left: -100vw;
+  }
 }
