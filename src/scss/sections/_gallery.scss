@@ -1,17 +1,21 @@
 .gallery {
   display: flex;
-  width: 328px;
-  gap: 30px;
   flex-direction: column;
+
+  width: 328px;
+
+  gap: 30px;
   align-items: center;
   &__header {
-    align-self: flex-start;
     position: relative;
+
+    align-self: flex-start;
   }
   &__header:after {
-    content: url(../img/Line\ 5.svg);
     position: absolute;
     bottom: -18px;
+
+    content: url(../img/Line\ 5.svg);
   }
   .main-btn {
     width: 100%;
@@ -21,13 +25,16 @@
 @media (min-width: 1440px) {
   .gallery {
     width: 1240px;
+
     gap: 60px;
     &__header {
-      align-self: flex-start;
       display: flex;
-      gap: 8px;
       flex-direction: column;
+
       margin-bottom: 15px;
+
+      align-self: flex-start;
+      gap: 8px;
       img {
         display: none;
       }

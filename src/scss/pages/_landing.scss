@@ -1,11 +1,14 @@
 .main {
   display: flex;
+  overflow: hidden;
   flex-direction: column;
 
   padding: 75px 16px 0;
 
   background: #ebf3fa;
-  overflow: hidden;
+  background-image: url(../uploads/Component\ 1.svg);
+  background-size: contain;
+
   align-items: center;
   gap: 75px;
 }

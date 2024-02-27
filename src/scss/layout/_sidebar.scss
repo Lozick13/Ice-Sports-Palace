@@ -7,13 +7,14 @@
   width: 100vw;
   height: 100vh;
 
+  animation: sidebarOpen 0.25s ease;
+
   background: $deep-blue;
   button {
     position: absolute;
     top: 30px;
     right: 30px;
   }
-  animation: sidebarOpen 0.25s ease;
 }
 @keyframes sidebarOpen {
   0% {

@@ -1,44 +1,57 @@
 .carousel {
+  position: relative;
+
   display: flex;
   flex-direction: column;
+
   gap: 24px;
   align-items: center;
-  position: relative;
   &__counter {
     position: absolute;
-    align-self: flex-end;
     top: -102px;
+
+    align-self: flex-end;
     .carousel__counter_now {
-      position: relative;
       font-size: 96px;
+
+      position: relative;
       top: 40px;
+
       transition: 0.5s;
     }
   }
   &__container {
     overflow: hidden;
+
     width: 328px;
     .carousel__items {
-      display: flex;
-      flex-direction: row;
-      gap: 16px;
       position: relative;
       right: 0;
+
+      display: flex;
+      flex-direction: row;
+
       transition: 1s;
 
+      gap: 16px;
+
       .carousel__item {
-        cursor: pointer;
         width: 328px;
         height: 180px;
+
+        cursor: pointer;
       }
       .carousel__item:before {
-        content: '';
-        background: $white;
+        position: absolute;
+
         width: 328px;
         height: 100%;
-        position: absolute;
-        opacity: 0.5;
+
+        content: '';
         transition: 0.5s;
+
+        opacity: 0.5;
+        background: $white;
       }
       .carousel__item:hover:before {
         opacity: 0.7;
@@ -53,27 +66,32 @@
   }
   &__buttons {
     display: flex;
-    gap: 30px;
+
     margin-bottom: 20px;
+
+    gap: 30px;
   }
 }
 
 @media (min-width: 1440px) {
   .carousel {
     width: 100%;
+
     align-items: flex-start;
     gap: 0;
     &__counter {
-      right: 176px;
       top: -260px;
+      right: 176px;
       .carousel__counter_now {
         font-size: 236px;
+
         top: 100px;
       }
     }
     &__container {
-      width: auto;
       overflow: visible;
+
+      width: auto;
       .carousel__items {
         gap: 15px;
         .carousel__item {
@@ -86,11 +104,13 @@
       }
     }
     &__buttons {
-      margin-bottom: 0;
-      gap: 531px;
       position: absolute;
-      right: 63px;
       top: -114px;
+      right: 63px;
+
+      margin-bottom: 0;
+
+      gap: 531px;
     }
   }
 }

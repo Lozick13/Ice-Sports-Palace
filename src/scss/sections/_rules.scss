@@ -86,12 +86,12 @@
     background: $white;
     &__point {
       position: relative;
+      left: 0;
 
       width: 10px;
       height: 2px;
 
       transition: 0.5s;
-      left: 0;
 
       border-radius: 2px;
       background: $vivid-blue;

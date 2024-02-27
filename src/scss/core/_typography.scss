@@ -1,33 +1,33 @@
 @font-face {
-  font-family: 'Exo 2', sans-serif;
+  font-family: 'Exo 2';
   font-weight: 900;
   font-style: normal;
 
   src: local('Exo 2'), url('../fonts/Exo2-Black.ttf');
 }
 @font-face {
-  font-family: 'Exo 2', sans-serif;
+  font-family: 'Exo 2';
   font-weight: 700;
   font-style: normal;
 
   src: local('Exo 2'), url('../fonts/Exo2-Black.ttf');
 }
 @font-face {
-  font-family: 'Exo 2', sans-serif;
+  font-family: 'Exo 2';
   font-weight: 600;
   font-style: normal;
 
   src: local('Exo 2'), url('../fonts/Exo2-SemiBold.ttf');
 }
 @font-face {
-  font-family: 'Exo 2', sans-serif;
+  font-family: 'Exo 2';
   font-weight: 400;
   font-style: normal;
 
   src: local('Exo 2'), url('../fonts/Exo2-Regular.ttf');
 }
 @font-face {
-  font-family: 'Exo 2', sans-serif;
+  font-family: 'Exo 2';
   font-weight: 200;
   font-style: normal;
 
@@ -36,7 +36,7 @@
 
 .exo2-black {
   font: {
-    family: 'Exo 2', sans-serif;
+    family: 'Exo 2';
     weight: 900;
     size: 38px;
   }
@@ -47,13 +47,13 @@
 }
 .exo2-bold {
   font: {
-    family: 'Exo 2', sans-serif;
+    family: 'Exo 2';
     weight: 700;
     size: 36px;
   }
   @media (min-width: 1440px) {
     font: {
-      family: 'Exo 2', sans-serif;
+      family: 'Exo 2';
       weight: 600;
       size: 96px;
     }
@@ -61,7 +61,7 @@
 }
 .exo2-regular {
   font: {
-    family: 'Exo 2', sans-serif;
+    family: 'Exo 2';
     weight: 400;
     size: 16px;
   }
@@ -71,7 +71,7 @@
 }
 .exo2-extralight {
   font: {
-    family: 'Exo 2', sans-serif;
+    family: 'Exo 2';
     weight: 200;
     size: 12px;
   }
@@ -93,8 +93,9 @@
   color: $deep-blue;
 }
 .white-hover {
-  color: $white;
   transition-duration: 0.5s;
+
+  color: $white;
 
   &:hover {
     color: $grey-blue;

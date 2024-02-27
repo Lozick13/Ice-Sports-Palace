@@ -37,9 +37,10 @@
   }
 }
 .services:after {
-  content: url(../img/Разделитель.svg);
   position: absolute;
   bottom: -32px;
+
+  content: url(../img/Разделитель.svg);
 }
 @media (min-width: 1440px) {
   .services {

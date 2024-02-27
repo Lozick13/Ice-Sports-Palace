@@ -11,12 +11,14 @@
         <i class="icon icon_cross"></i>
       </button>
       <nav class="navigation navigation_mobile">
-        <a href="" class="exo2-bold white-hover">Услуги</a
-        ><a href="" class="exo2-bold white-hover">Прайс</a
-        ><a href="" class="exo2-bold white-hover">Галерея</a
-        ><a href="" class="exo2-bold white-hover">Правила</a
-        ><a href="" class="exo2-bold white-hover">История</a
-        ><a href="" class="exo2-bold white-hover">Документы</a>
+        <a href="#services" class="navigation__link exo2-bold white-hover">Услуги</a>
+        <a href="#price" class="navigation__link exo2-bold white-hover">Прайс</a>
+        <a href="#gallery" class="navigation__link exo2-bold white-hover">Галерея</a>
+        <a href="#rules" class="navigation__link exo2-bold white-hover">Правила</a>
+        <a href="#information" class="navigation__link exo2-bold white-hover">История</a>
+        <a href="#information" class="navigation__link exo2-bold white-hover">
+          Документы
+        </a>
       </nav>
     </article>
 
@@ -27,37 +29,43 @@
         </button>
         <a href="#"><img src="img/LDS 2.png" alt="Логотип ЛДС" class="logo" /></a>
         <nav class="navigation">
-          <a href="" class="exo2-regular white-hover">Услуги</a
-          ><a href="" class="exo2-regular white-hover">Прайс</a
-          ><a href="" class="exo2-regular white-hover">Галерея</a
-          ><a href="" class="exo2-regular white-hover">Правила</a
-          ><a href="" class="exo2-regular white-hover">История</a
-          ><a href="" class="exo2-regular white-hover">Документы</a>
+          <a href="#services" class="navigation__link exo2-regular white-hover">Услуги</a>
+          <a href="#price" class="navigation__link exo2-regular white-hover">Прайс</a>
+          <a href="#gallery" class="navigation__link exo2-regular white-hover">Галерея</a>
+          <a href="#rules" class="navigation__link exo2-regular white-hover">Правила</a>
+          <a href="#information" class="navigation__link exo2-regular white-hover">
+            История
+          </a>
+          <a href="#information" class="navigation__link exo2-regular white-hover">
+            Документы
+          </a>
         </nav>
-        <a href="tel:+73834140919" class="exo2-regular white-hover tel"
-          >8 (383-41) 4-09-19</a
-        >
+        <a href="tel:+73834140919" class="exo2-regular white-hover tel">
+          8 (383-41) 4-09-19
+        </a>
       </div>
 
       <div class="header__main">
         <h1 class="exo2-black white">Ледовый дворец спорта Бердск</h1>
         <div class="header__btns">
-          <button class="header-btn header-btn_transparent exo2-regular">Прайс</button>
-          <button class="header-btn exo2-regular">Бронь</button>
+          <form action="#price" class="navigation__link">
+            <button class="header-btn header-btn_transparent exo2-regular">Прайс</button>
+          </form>
+          <button class="stub header-btn exo2-regular">Бронь</button>
         </div>
       </div>
     </header>
 
     <main class="main">
-      <section class="services">
+      <section id="services" class="services">
         <h2 class="exo2-bold deep-blue">Услуги</h2>
         <div class="services__wrap">
           <article class="services__card exo2-regular deep-blue">
             <img src="img/ice skating.svg" alt="Коньки" />
-            <span
-              >Аренда и заточка<br />
-              коньков</span
-            >
+            <span>
+              Аренда и заточка<br />
+              коньков
+            </span>
           </article>
           <article class="services__card exo2-regular deep-blue">
             <img src="img/Union2.svg" alt="Теннис" />
@@ -69,15 +77,15 @@
           </article>
           <article class="services__card exo2-regular deep-blue">
             <img src="img/Outline.svg" alt="Клюшки" />
-            <span
-              >Тренировки<br />
-              и соревнования</span
-            >
+            <span>
+              Тренировки<br />
+              и соревнования
+            </span>
           </article>
         </div>
       </section>
 
-      <section class="price">
+      <section id="price" class="price">
         <h2 class="exo2-bold deep-blue">Прайс</h2>
 
         <table class="table">
@@ -168,22 +176,24 @@
           </tr>
         </table>
 
-        <button class="main-btn exo2-regular" id="rates">Тарифы</button>
+        <form action="https://disk.yandex.ru/i/pL84yVbytVJdWA">
+          <button class="main-btn exo2-regular" id="rates">Тарифы</button>
+        </form>
 
         <article class="reservation">
-          <button class="reservation-btn exo2-regular white">
+          <button class="stub reservation-btn exo2-regular white">
             <img src="img/ice skating.svg" alt="Коньки" />
             <span>Забронировать коньки</span>
           </button>
-          <button class="reservation-btn exo2-regular white">
+          <button class="stub reservation-btn exo2-regular white">
             <img src="img/Union2.svg" alt="Теннис" />
             <span>Забронировать стол для тенниса</span>
           </button>
-          <button class="reservation-btn exo2-regular white">
+          <button class="stub reservation-btn exo2-regular white">
             <img src="img/Union1.svg" alt="Бильярд" />
             <span>Забронировать стол для бильярда</span>
           </button>
-          <button class="reservation-btn exo2-regular white">
+          <button class="stub reservation-btn exo2-regular white">
             <img src="img/Outline.svg" alt="Клюшки" />
             <span>Бронь для групповых тренировок</span>
           </button>
@@ -194,7 +204,7 @@
         Приглашаем на массовое катание по выходным<br />с 17 до 22
       </h2>
 
-      <section class="rules white">
+      <section id="rules" class="rules white">
         <div class="rules__header">
           <h2 class="exo2-bold h2-big">
             Правила поведения&nbsp;<br />
@@ -207,107 +217,115 @@
         <div class="rules__cards">
           <article class="rules__card rules__card_active">
             <div class="rules__card-container">
-              <img src="img/Union3.svg" alt="Ключ" /><span class="exo2-regular"
-                >Залог за номерок<br />от кабинки - документ или 1500 р.</span
-              >
+              <img src="img/Union3.svg" alt="Ключ" />
+              <span class="exo2-regular">
+                Залог за номерок<br />
+                от кабинки - документ или 1500 р.
+              </span>
             </div>
           </article>
           <article class="rules__card">
             <div class="rules__card-container">
-              <img src="img/Vector2.svg" alt="Коньки" /><span class="exo2-regular"
-                >Выдача коньков<br />
+              <img src="img/Vector2.svg" alt="Коньки" />
+              <span class="exo2-regular">
+                Выдача коньков<br />
                 производится<br />
                 под денежный залог<br />
-                в размере 1500 руб</span
-              >
+                в размере 1500 руб
+              </span>
             </div>
           </article>
           <article class="rules__card">
             <div class="rules__card-container">
-              <img src="img/Union4.svg" alt="Карты" /><span class="exo2-regular"
-                >Залог за пластиковую карту - 200 руб.<br />
-                с каждого катающегося</span
-              >
+              <img src="img/Union4.svg" alt="Карты" />
+              <span class="exo2-regular">
+                Залог за пластиковую карту - 200 руб.<br />
+                с каждого катающегося
+              </span>
             </div>
           </article>
           <article class="rules__card">
             <div class="rules__card-container">
-              <img
-                src="img/Union5.svg"
-                alt="Осторожно"
-                class="rules__card_warning"
-              /><span class="exo2-regular"
-                >При утере карты взимается штраф<br />
+              <img src="img/Union5.svg" alt="Осторожно" class="rules__card_warning" />
+              <span class="exo2-regular">
+                При утере карты взимается штраф<br />
                 200 руб. и оплата<br />
                 за всё время<br />
-                до обращения в кассу</span
-              >
+                до обращения в кассу
+              </span>
             </div>
           </article>
           <article class="rules__card">
             <div class="rules__card-container">
-              <img src="img/Union6.svg" alt="Замок" class="rules__card_lock" /><span
-                class="exo2-regular"
-                >При утере номерка<br />
-                от кабинки или поломке замка - штраф 500 руб.</span
-              >
+              <img src="img/Union6.svg" alt="Замок" class="rules__card_lock" />
+              <span class="exo2-regular">
+                При утере номерка<br />
+                от кабинки или поломке замка - штраф 500 руб.
+              </span>
             </div>
           </article>
           <article class="rules__card">
             <div class="rules__card-container">
-              <img src="img/Union7.svg" alt="Смотрящий" /><span class="exo2-regular"
-                >Выходить на ледовое поле только<br />
-                с разрешения инструктора</span
-              >
+              <img src="img/Union7.svg" alt="Смотрящий" />
+              <span class="exo2-regular">
+                Выходить на ледовое поле только<br />
+                с разрешения инструктора
+              </span>
             </div>
           </article>
           <article class="rules__card">
             <div class="rules__card-container">
-              <img src="img/Vector.svg" alt="Круг" /><span class="exo2-regular"
-                >Кататься строго<br />
-                против часовой стрелки</span
-              >
+              <img src="img/Vector.svg" alt="Круг" />
+              <span class="exo2-regular">
+                Кататься строго<br />
+                против часовой стрелки
+              </span>
             </div>
           </article>
           <article class="rules__card">
             <div class="rules__card-container">
-              <img src="img/Vector1.svg" alt="Вещи" /><span class="exo2-regular"
-                >За утерянные вещи администрация<br />
+              <img src="img/Vector1.svg" alt="Вещи" />
+              <span class="exo2-regular">
+                За утерянные вещи администрация<br />
                 ЛДС «Бердск» ответственности<br />
-                не несет</span
-              >
+                не несет
+              </span>
             </div>
           </article>
           <article class="rules__card">
             <div class="rules__card-container">
-              <img src="img/Union8.svg" alt="Вещи" /><span class="exo2-regular"
-                >За пропажу ценных<br />
+              <img src="img/Union8.svg" alt="Вещи" />
+              <span class="exo2-regular">
+                За пропажу ценных<br />
                 вещей администрация ЛДС «Бердск» ответственности<br />
-                не несет</span
-              >
+                не несет
+              </span>
             </div>
           </article>
           <article class="rules__card">
             <div class="rules__card-container">
-              <img src="img/Union9.svg" alt="Семья" /><span class="exo2-regular"
-                >Катание детей до 7 лет без сопровождения взрослых строго запрещено</span
-              >
+              <img src="img/Union9.svg" alt="Семья" />
+              <span class="exo2-regular">
+                Катание детей до 7 лет без сопровождения взрослых строго запрещено
+              </span>
             </div>
           </article>
           <article class="rules__card">
             <div class="rules__card-container">
-              <img src="img/Union10.svg" alt="Часы" /><span class="exo2-regular"
-                >Время учитывается<br />
-                с момента получения карты</span
-              >
+              <img src="img/Union10.svg" alt="Часы" />
+              <span class="exo2-regular">
+                Время учитывается<br />
+                с момента получения карты
+              </span>
             </div>
           </article>
           <article class="rules__card">
             <div class="rules__card-container">
-              <img src="img/Union11.svg" alt="Часы" /><span class="exo2-regular"
-                >Выдача инвентаря прекращается за час<br />
-                до окончания массового катания</span
-              >
+              <img src="img/Union11.svg" alt="Часы" />
+              <span class="exo2-regular">
+                Выдача инвентаря прекращается за час<br />
+                до окончания массового катания
+              </span>
             </div>
           </article>
         </div>
@@ -316,15 +334,16 @@
         </div>
       </section>
 
-      <section class="gallery">
+      <section id="gallery" class="gallery">
         <div class="gallery__header">
           <h2 class="exo2-bold deep-blue">Галерея</h2>
         </div>
 
         <div class="carousel">
-          <span class="carousel__counter exo2-bold deep-blue"
-            ><span class="carousel__counter_now grey-blue">01</span>/0</span
-          >
+          <span class="carousel__counter exo2-bold deep-blue">
+            <span class="carousel__counter_now grey-blue">01</span>
+            /0
+          </span>
           <div class="carousel__container">
             <!-- адаптировано под большее количество фото -->
             <div class="carousel__items">
@@ -351,10 +370,12 @@
             </button>
           </div>
         </div>
-        <button class="main-btn exo2-regular">Фото с массового катания</button>
+        <form action="https://disk.yandex.ru/d/vZjABrLPfZGpfw">
+          <button class="main-btn exo2-regular">Фото с массового катания</button>
+        </form>
       </section>
 
-      <section class="information">
+      <section id="information" class="information">
         <article class="history">
           <button class="information-btn">
             <i class="icon icon_information"></i
@@ -362,8 +383,8 @@
           </button>
           <div class="information__container">
             <p class="history__text exo2-regular dark-blue">
-              2 февраля 2007 года состоялось <strong>торжественное открытие.</strong
-              ><br />
+              2 февраля 2007 года состоялось <strong>торжественное открытие. </strong>
+              <br />
               В г. Бердске на улице Боровой неподалёку от техникума открылся современный
               Ледовый дворец спорта. В главной спортивной ледовой арене Бердска, которую
               одновременно смогут посетить 900 человек, расположены учебно-тренировочные
@@ -380,12 +401,13 @@
               <strong>Первый кубок ЛДС</strong><br />
               В сезоне 2007/2008 впервые проведён хоккейный турнир на кубок ЛДС. Итоги
               основного турнира
-              <a class="dark-blue" href="http://www.lds-berdsk.ru/node/7">подробнее...</a
-              ><br /><br /><br />
-              <strong
-                >I междугородний турнир по хоккею среди детей 1999 года памяти Г.И.
-                Золотухина</strong
-              ><br />
+              <a class="dark-blue" href="http://www.lds-berdsk.ru/node/7">подробнее...</a>
+              <br /><br /><br />
+              <strong>
+                I междугородний турнир по хоккею среди детей 1999 года памяти Г.И.
+                Золотухина
+              </strong>
+              <br />
               C 16 по 20 апреля 2008 г. в Ледовом дворце спорта "Бердск" прошли I
               междугородные соревнования по хоккею с шайбой для детей 1999 года рождения.
               В соревнованиях приняли участие команды городов: Бердска, Междуреченска,
@@ -397,9 +419,10 @@
               года рождения из г. Пензы, г. Омска, г. Барнаула, г. Новосибирска, г. Уфы,
               г. Екатеринбурга. 1 место - "Салават Юлаев", г. Уфа. 2 место - "Авангард",
               г. Омск. 3 Место - "Сибирь", г. Новосибирск. <br /><br /><br />
-              <strong
-                >Хоккейный турнир среди ветеранов на призы компании "Такао Моторс" </strong
-              ><br />
+              <strong>
+                Хоккейный турнир среди ветеранов на призы компании "Такао Моторс"
+              </strong>
+              <br />
               С 25 по 27 сентября 2008 г. на нашей площадке проходил хоккейный турнир
               среди ветеранов на призы компании "Такао Моторс". В турнире приняли участие
               команды из г. Новосибирска, Бердска, Искитима, СК "Кристалл". 1 место - г.
@@ -425,13 +448,13 @@
               пермяками "Кристалл" вышел в Чемпионат МХЛ (группа А). В рамках которого в
               сезоне 2012-2013 будет принимать на Ледовой арене ЛДС "Бердск" домашние
               встречи.<br /><br /><br />
-              <strong>Первенство Сибири и Дальнего Востока по фигурному катанию</strong
-              ><br />
+              <strong> Первенство Сибири и Дальнего Востока по фигурному катанию </strong>
+              <br />
               В феврале 2012 года в ЛДС "Бердск" проходило Первенство Сибири и Дальнего
               Востока по фигурному катанию. Лучшие выступления показали фигуристы из
               Хабаровского края. <br /><br /><br />
-              <strong>Матч Звезд Сибирской Хоккейной Лиги 2017 (28 января 2017)</strong
-              ><br />
+              <strong> Матч Звезд Сибирской Хоккейной Лиги 2017 (28 января 2017) </strong>
+              <br />
               <iframe
                 src="https://www.youtube.com/embed/6ye385ANSAk?si=RChrtLj4pD75oSlC"
                 title="YouTube video player"
@@ -444,8 +467,8 @@
         </article>
         <article class="docs">
           <button class="information-btn">
-            <i class="icon icon_information"></i
-            ><span class="exo2-regular dark-blue">Документы</span>
+            <i class="icon icon_information"></i>
+            <span class="exo2-regular dark-blue">Документы</span>
           </button>
           <div class="information__container">
             <a
@@ -643,32 +666,33 @@
       <h2 class="exo2-bold white h2-big">ЛЕДОВЫЙ ДВОРЕЦ СПОРТА БЕРДСК</h2>
       <div class="footer__information">
         <nav class="navigation">
-          <a href="" class="exo2-regular white-hover">Услуги</a
-          ><a href="" class="exo2-regular white-hover">Прайс</a
-          ><a href="" class="exo2-regular white-hover">Галерея</a
-          ><a href="" class="exo2-regular white-hover">Правила посещения</a
-          ><a href="" class="exo2-regular white-hover">История</a
-          ><a href="" class="exo2-regular white-hover">Документы</a>
+          <a href="" class="exo2-regular white-hover">Услуги</a>
+          <a href="" class="exo2-regular white-hover">Прайс</a>
+          <a href="" class="exo2-regular white-hover">Галерея</a>
+          <a href="" class="exo2-regular white-hover">Правила посещения</a>
+          <a href="" class="exo2-regular white-hover">История</a>
+          <a href="" class="exo2-regular white-hover">Документы</a>
         </nav>
         <div class="footer__right">
           <div class="footer__contacts">
             <address class="exo2-regular white">
               633009, Новосибирская область, г. Бердск, ул. Боровая 103А
             </address>
-            <span class="mail exo2-regular white"
-              >Электронная почта для писем:<br />
-              <a class="exo2-regular white-hover" href="mailto:lds-berdsk@yandex.ru"
-                >lds-berdsk@yandex.ru</a
-              >
+            <span class="mail exo2-regular white">
+              Электронная почта для писем:<br />
+              <a class="exo2-regular white-hover" href="mailto:lds-berdsk@yandex.ru">
+                lds-berdsk@yandex.ru
+              </a>
             </span>
             <span class="exo2-regular white">
               Телефон:
-              <a class="exo2-regular white-hover" href="tel:8 (383-41) 4-09-19"
-                >8 (383-41) 4-09-19</a
-              >,
-              <a class="exo2-regular white-hover" href="8-913-017-93-12"
-                >8-913-017-93-12</a
-              >
+              <a class="exo2-regular white-hover" href="tel:8 (383-41) 4-09-19">
+                8 (383-41) 4-09-19
+              </a>
+              ,
+              <a class="exo2-regular white-hover" href="8-913-017-93-12">
+                8-913-017-93-12
+              </a>
             </span>
           </div>
           <span class="exo2-regular white"
